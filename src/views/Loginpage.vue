@@ -23,18 +23,19 @@
 
 <script>
 import axios from "axios";
+import API from ".env";
 
 export default {
     data() {
         return {
             uid: null,
+            api: API,
         };
     },
     methods: {
         // login functions
         async login() { 
-            // const res = await axios.post("https://api.awikwokshort.my.id/api/login", {
-            const res = await axios.post('http://localhost:8000/api/login', { //DEBUG ONLY
+            const res = await axios.post( this.api + "/login", {
                 email: this.email,
                 password: this.password,
             })

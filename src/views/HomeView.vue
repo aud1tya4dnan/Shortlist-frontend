@@ -34,6 +34,8 @@
 
 <script>
 import axios from "axios";
+import API from ".env";
+
 export default {
   data() {
     return {
@@ -42,8 +44,7 @@ export default {
       uid: "",
       valid: "",
       mylink: "",
-      // api: "https://api.awikwokshort.my.id/api/",
-      api: "http://localhost:8000/api/", //DEBUG ONLY
+      api: API,
     };
   },
   methods: {
