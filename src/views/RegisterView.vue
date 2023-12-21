@@ -23,12 +23,11 @@
 
 <script>
 import axios from "axios";
-import API from ".env";
 
 export default {
     data() {
     return {
-    api: API,
+      api:'https://api.awikwokshort.my.id/api/',
     };
     },
     methods: {

@@ -33,7 +33,6 @@
 
 <script>
 import axios from "axios";
-import API from ".env";
 
 export default {
   data() {
@@ -49,7 +48,7 @@ export default {
           newflink: "",
         },
       ],
-      api: API,
+      api:'https://api.awikwokshort.my.id/api/',
       editbar: false,
     };
   },

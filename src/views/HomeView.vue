@@ -32,7 +32,6 @@
 
 <script>
 import axios from "axios";
-import API from ".env";
 
 export default {
   data() {
@@ -42,7 +41,7 @@ export default {
       uid: "",
       valid: "",
       mylink: "",
-      api: API,
+      api:'https://api.awikwokshort.my.id/api/',
     };
   },
   methods: {

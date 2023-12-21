@@ -8,7 +8,6 @@
 
 <script>
 import axios from "axios";
-import API from ".env";
 
 export default {
   mounted() {
@@ -20,7 +19,7 @@ export default {
       dynamicText: "Redirecting you to the original link...",
       fulllink: "",
       isRevealing: false,
-      api: API,
+      api:'https://api.awikwokshort.my.id/api/',
     };
   },
   methods: {
