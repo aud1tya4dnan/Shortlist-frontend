@@ -26,8 +26,6 @@
       >
         Shorten
       </button>
-      <!-- <p class="text-2xl font-sans font-light mt-4">{{ this.valid }}</p> -->
-      <!-- <a class="text-2xl font-sans font-light mt-4" :href="'https://www.awikwokshort.my.id/' + this.shortlink ">{{ this.mylink }}</a> -->
     </div>
   </div>
 </template>
