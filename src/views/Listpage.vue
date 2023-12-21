@@ -48,7 +48,7 @@ export default {
           newflink: "",
         },
       ],
-      api:'https://api.awikwokshort.my.id/api/',
+      api:'https://api.awikwokshort.my.id/api',
       editbar: false,
     };
   },
@@ -66,9 +66,9 @@ export default {
     },
     async getLink() {
       this.userID = localStorage.getItem("uid");
-      console.log(this.userID)
+      console.log(this.userID);
       const res = await axios
-        .get(this.api + "link/")
+        .get(this.api + "/link/")
         .then((response) => {
           this.links.push(...response.data);
           console.log(response.data)
@@ -77,7 +77,7 @@ export default {
     async postLink() {
       userID = localStorage.getItem("uid");
       const res = await axios
-        .post( this.api + "link/", {
+        .post( this.api + "/link/", {
           flink: this.flink,
           slink: this.slink,
           uid: userID,
@@ -91,7 +91,7 @@ export default {
     },
     async deleteLink(id) {
       const res = await axios
-        .delete(this.api + "link/" + id)
+        .delete(this.api + "/link/" + id)
         .then(() => {
           // console.log(response.data)
           location.reload();
@@ -99,7 +99,7 @@ export default {
     },
     async editHandler(id) {
       const res = await axios
-        .patch( this.api + "link/" + id, {
+        .patch( this.api + "/link/" + id, {
           newflink: this.newLink.newflink,
           newslink: this.newLink.newslink,
         })

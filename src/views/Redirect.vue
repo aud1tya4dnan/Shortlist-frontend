@@ -19,7 +19,7 @@ export default {
       dynamicText: "Redirecting you to the original link...",
       fulllink: "",
       isRevealing: false,
-      api:'https://api.awikwokshort.my.id/api/',
+      api:'https://api.awikwokshort.my.id/api',
     };
   },
   methods: {

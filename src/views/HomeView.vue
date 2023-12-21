@@ -41,7 +41,7 @@ export default {
       uid: "",
       valid: "",
       mylink: "",
-      api:'https://api.awikwokshort.my.id/api/',
+      api:'https://api.awikwokshort.my.id/api',
     };
   },
   methods: {
@@ -54,7 +54,7 @@ export default {
         return; // Menghentikan proses selanjutnya jika URL tidak valid
       }
       const res = await axios
-        .post( this.api + "link/", {
+        .post( this.api + "/link/", {
           flink: this.longurl,
           slink: this.shorturl,
           uid: uid,

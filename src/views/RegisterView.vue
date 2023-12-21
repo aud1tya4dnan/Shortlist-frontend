@@ -27,7 +27,7 @@ import axios from "axios";
 export default {
     data() {
     return {
-      api:'https://api.awikwokshort.my.id/api/',
+      api:'https://api.awikwokshort.my.id/api',
     };
     },
     methods: {
